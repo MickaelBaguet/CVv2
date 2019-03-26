@@ -3,11 +3,11 @@ body
   margin: 0;
 }
 
-a
+#cMenu a
 {
-  display: block;
   text-decoration: none;
   color: white;
+  width: 100%;
 }
 
 #cGlobal
@@ -38,7 +38,64 @@ a
   background-color: #555D5E;
   text-align: center;
   padding: 10px;
-  width: 20%;
+  width: auto;
+}
+
+.cBouton:hover
+{
+  background-color:#D3D3D3;
+  border-color:#696969 #DCDCDC #DCDCDC #696969;
+}
+
+#cMenuDeroulant
+{
+  display: block;
+  color: white;
+  background-color: #555D5E;
+  width: 100%;
+  padding:10px;
+  text-align: center;
+}
+
+#cMenuDeroulant p
+{
+  margin: auto;
+}
+
+#cMenuDeroulant ul
+{
+  display: inline;
+  list-style-type:none;
+  width: 100%;
+}
+
+#cMenuDeroulant li
+{
+  background-color: #555D5E;
+}
+
+#cMenuDeroulant li a
+{
+  display:block;
+  color:white;
+  text-decoration:none;
+  padding:10px;
+}
+
+#cMenuDeroulant li a:hover
+{
+  background-color:#D3D3D3;
+  border-color:#696969 #DCDCDC #DCDCDC #696969;
+}
+
+#cMenuDeroulant ul li
+{
+  display: none;
+}
+
+#cMenuDeroulant:hover ul li
+{
+  display: block;
 }
 
 #cExp
@@ -73,8 +130,23 @@ a
   width: 100%;
 }
 
-.cBouton:hover
+
+
+/* Cache le menu deroulant à moins de 500px */
+@media screen and (min-width: 500px)
 {
-  background-color:#D3D3D3;
-  border-color:#696969 #DCDCDC #DCDCDC #696969;
+  #cMenuDeroulant
+  {
+    display : none;
+  }
+}
+
+/* Cache le menu classique à moins de 500px */
+@media screen and (max-device-width: 500px)
+{
+  /* Enlève le paragraphe de l'en-tête */
+  #cMenu
+  {
+    display: none;
+  }
 }
