@@ -15,6 +15,11 @@ hr
   width: 100%;
 }
 
+    /* #cGlobal > div
+    {
+      padding-bottom: 20px;
+    } */
+
     #cGlobal h2
     {
       text-align: center;
@@ -66,8 +71,6 @@ hr
   color: white;
   background-color: #555D5E;
   width: 100%;
-  /* padding:10px; */
-  /* text-align: center; */
   padding-top: 15px;
 }
 
@@ -117,11 +120,46 @@ hr
       display: block;
     }
 
+#cMoi
+{
+  display: block;
+  width: 100%;
+}
+
+    #cMoi1
+    {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      align-items: center;
+    }
+
+    #cPhoto
+    {
+      display: inline-flex;
+      width: 30%;
+      align-items: center;
+      justify-content: center;
+
+    }
+
+    #cMoiText
+    {
+      display: block;
+      width: 70%;
+      height: 100%;
+    }
+
+    #cMoiText a
+    {
+      text-align: left;
+    }
 
 #cExp
 {
   display: block;
   width: 100%;
+  background-color: #F4F4F4;
 }
 
     .cExp1
@@ -143,15 +181,16 @@ hr
     .cTitre
     {
       display: flex;
-      width: 70%;
-      background-color: #F4F4F4;
+      width: 65%;
+      background-color: #748384;
+      padding-left: 10px;
     }
 
     .cDate
     {
       display: flex;
       width: 30%;
-      background-color: #F4F4F4;
+      background-color: #748384;
     }
 
 #cComp
@@ -159,7 +198,7 @@ hr
   display: flex;
   flex-direction: column;
   width: 100%;
-  background-color: #F4F4F4;
+  /* background-color: #F4F4F4; */
 }
 
     progress
@@ -198,18 +237,40 @@ hr
       background: #808080;
     }
 
-#cDipl
-{
-  display: block;
-  width: 100%;
-}
-
-#cInt
+#cForm
 {
   display: block;
   width: 100%;
   background-color: #F4F4F4;
 }
+
+    .cForm1
+    {
+      display: flex;
+      width: 100%;
+      padding: 10px 0;
+      justify-content: center;
+
+    }
+
+    .cFormDate
+    {
+      display: inline-flex;
+      width: 20%;
+      background-color: #748384;
+      align-items: center;
+      justify-content: center;
+      border: 2px black solid;
+    }
+
+    .cFormTitre
+    {
+      display: block;
+      width: 65%;
+      background-color: white;
+      padding-left: 10px;
+      border: 2px black solid;
+    }
 
 #cCont
 {
@@ -226,14 +287,12 @@ hr
     {
       display: inline-block;
       width: 33%;
-      /* background-color: red; */
     }
 
     #tel
     {
       display: inline-block;
       width: 33%;
-      /* background-color: blue; */
     }
 
 
@@ -241,11 +300,9 @@ hr
     {
       display: inline-block;
       width: 33%;
-      /* background-color: green; */
     }
 
-/* #mail:hover, #tel:hover, #git:hover */
-img:hover
+#mail:hover, #tel:hover, #git:hover
 {
   /* Rotation des image au survol */
   /* -webkit-transform: rotate(20deg);
@@ -269,14 +326,40 @@ img:hover
   {
     display : none;
   }
+
+}
+
+@media screen and (max-device-width: 1000px)
+{
+  #mail, #tel, #git
+  {
+    width: 100%;
+  }
 }
 
 /* Cache le menu classique à moins de 500px */
 @media screen and (max-device-width: 500px)
 {
   /* Enlève le paragraphe de l'en-tête */
-  #cMenu
+  #cMenu, #cPhoto, .ligne
   {
     display: none;
   }
+
+  #cMoiText
+  {
+    width: 100%;
+    text-align: center;
+  }
+
+  .cCompDetail
+  {
+    width: 90%;
+  }
+
+  #mail, #tel, #git
+  {
+    width: 100%;
+  }
+
 }
