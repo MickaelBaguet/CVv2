@@ -15,11 +15,6 @@ hr
   width: 100%;
 }
 
-    /* #cGlobal > div
-    {
-      padding-bottom: 20px;
-    } */
-
     #cGlobal h2
     {
       text-align: center;
@@ -71,14 +66,16 @@ hr
   color: white;
   background-color: #555D5E;
   width: 100%;
-  padding-top: 15px;
+  padding-top: 10px;
+  margin: 0;
+
 }
 
     #cMenuDeroulant p
     {
       margin: 0 auto;
-      height: 2em;
-      line-height: 2em;
+
+
     }
 
     #cMenuDeroulant ul
