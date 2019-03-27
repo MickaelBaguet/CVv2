@@ -8,6 +8,11 @@ hr
   width: 80%
 }
 
+#cExp, #cComp, #cForm
+{
+  padding-bottom: 10px;
+}
+
 #cGlobal
 {
   display: flex;
