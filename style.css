@@ -3,11 +3,9 @@ body
   margin: 0;
 }
 
-#cMenu a
+hr
 {
-  text-decoration: none;
-  color: white;
-  width: 100%;
+  width: 80%
 }
 
 #cGlobal
@@ -16,6 +14,12 @@ body
   flex-wrap: wrap;
   width: 100%;
 }
+
+    #cGlobal h2
+    {
+      text-align: center;
+      padding: 10px;
+    }
 
 #cEnTete
 {
@@ -32,71 +36,87 @@ body
   width: 100%;
 }
 
-.cBouton
-{
-  display: block;
-  background-color: #555D5E;
-  text-align: center;
-  padding: 10px;
-  width: auto;
-}
+    #cMenu a
+    {
+      text-decoration: none;
+      color: white;
+      width: 100%;
+    }
 
-.cBouton:hover
-{
-  background-color:#D3D3D3;
-  border-color:#696969 #DCDCDC #DCDCDC #696969;
-}
+    .cBouton
+    {
+      display: block;
+      background-color: #555D5E;
+      text-align: center;
+      padding: 10px;
+      width: auto;
+    }
+
+    .cBouton:hover
+    {
+      background-color:#D3D3D3;
+      border-color:#696969 #DCDCDC #DCDCDC #696969;
+    }
 
 #cMenuDeroulant
 {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   color: white;
   background-color: #555D5E;
   width: 100%;
-  padding:10px;
-  text-align: center;
+  /* padding:10px; */
+  /* text-align: center; */
+  padding-top: 15px;
 }
 
-#cMenuDeroulant p
-{
-  margin: auto;
-}
+    #cMenuDeroulant p
+    {
+      margin: 0 auto;
+      height: 2em;
+      line-height: 2em;
+    }
 
-#cMenuDeroulant ul
-{
-  display: inline;
-  list-style-type:none;
-  width: 100%;
-}
+    #cMenuDeroulant ul
+    {
+      display: inline;
+      list-style-type:none;
+      width: 100%;
+      padding: 0;
+    }
 
-#cMenuDeroulant li
-{
-  background-color: #555D5E;
-}
+    #cMenuDeroulant li
+    {
+      background-color: #555D5E;
+      width: 100%;
+      text-align: center;
+    }
 
-#cMenuDeroulant li a
-{
-  display:block;
-  color:white;
-  text-decoration:none;
-  padding:10px;
-}
+    #cMenuDeroulant li a
+    {
+      display:block;
+      color:white;
+      text-decoration:none;
+      padding:10px;
+    }
 
-#cMenuDeroulant li a:hover
-{
-  background-color:#D3D3D3;
-  border-color:#696969 #DCDCDC #DCDCDC #696969;
-}
+    #cMenuDeroulant li a:hover
+    {
+      background-color:#D3D3D3;
+      border-color:#696969 #DCDCDC #DCDCDC #696969;
+    }
 
-#cMenuDeroulant ul li
-{
-  display: none;
-}
+    #cMenuDeroulant ul li
+    {
+      display: none;
+    }
 
-#cMenuDeroulant:hover ul li
-{
-  display: block;
-}
+    #cMenuDeroulant:hover ul li
+    {
+      display: block;
+    }
+
 
 #cExp
 {
@@ -104,12 +124,79 @@ body
   width: 100%;
 }
 
+    .cExp1
+    {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+
+    }
+
+    .cTitreDate
+    {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      padding: 10px 50px;
+    }
+
+    .cTitre
+    {
+      display: flex;
+      width: 70%;
+      background-color: #F4F4F4;
+    }
+
+    .cDate
+    {
+      display: flex;
+      width: 30%;
+      background-color: #F4F4F4;
+    }
+
 #cComp
 {
-  display: block;
-  width: 100;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
   background-color: #F4F4F4;
 }
+
+    progress
+    {
+      /* background: grey; */
+      width: 40%;
+      /* Fait disparaitre le fond pour Firefox et Chrome */
+      appearance: none;
+	    -moz-appearance: none;
+	    -webkit-appearance: none;
+    }
+
+    #cComp li
+    {
+      list-style-type: none;
+    }
+
+    .cCompt1
+    {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+    }
+
+    .cCompDetail
+    {
+      display: block;
+      width: 49%;
+      text-align: center;
+    }
+
+    .ligne
+    {
+      width: 2px;
+      height: 90%;
+      background: #808080;
+    }
 
 #cDipl
 {
@@ -130,7 +217,50 @@ body
   width: 100%;
 }
 
+    #cCont div
+    {
+      text-align: center;
+    }
 
+    #mail
+    {
+      display: inline-block;
+      width: 33%;
+      /* background-color: red; */
+    }
+
+    #tel
+    {
+      display: inline-block;
+      width: 33%;
+      /* background-color: blue; */
+    }
+
+
+    #git
+    {
+      display: inline-block;
+      width: 33%;
+      /* background-color: green; */
+    }
+
+/* #mail:hover, #tel:hover, #git:hover */
+img:hover
+{
+  /* Rotation des image au survol */
+  /* -webkit-transform: rotate(20deg);
+  -moz-transform: rotate(20deg);
+  -ms-transform: rotate(20deg);
+  -o-transform: rotate(20deg);
+  transform: rotate(20deg); */
+
+  /* Zoom de 10% de l'image au survol */
+  -webkit-transform:scale(1.10); /* Safari et Chrome */
+  -moz-transform:scale(1.10); /* Firefox */
+  -ms-transform:scale(1.10); /* Internet Explorer 9 */
+  -o-transform:scale(1.10); /* Opera */
+  transform:scale(1.10);
+}
 
 /* Cache le menu deroulant à moins de 500px */
 @media screen and (min-width: 500px)
